@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: #efefef; }
+
+body {
+  background: #241025; }
+
+main {
+  width: 100%;
+  padding: 4vw; }
+  main section {
+    width: 100%; }
+    main section::after {
+      content: "";
+      display: block;
+      clear: both; }
+    main section .item-init {
+      width: 33.333%;
+      height: 0px;
+      opacity: 0; }
+    main section .item {
+      width: 33.333%;
+      height: 30vh;
+      padding: 5px;
+      float: left; }
+      main section .item .inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        main section .item .inner p {
+          display: block;
+          font: 600 24px/1 'Playfair Display';
+          letter-spacing: 1px;
+          color: #fff; }
+        main section .item .inner h3 {
+          writing-mode: vertical-rl;
+          text-orientation: upright;
+          color: #fff;
+          font: 900 48px/1 'Playfair Display'; }
+        main section .item .inner h4 {
+          writing-mode: vertical-rl;
+          text-orientation: upright;
+          color: #fff;
+          font: 600 26px/1 'Playfair Display'; }
+        main section .item .inner span {
+          font: 12px/1.1 'Playfair Display';
+          color: #525252;
+          padding-top: 30px;
+          display: block; }
+        main section .item .inner .btn {
+          padding-top: 30px; }
+        main section .item .inner a {
+          display: block;
+          width: 100px;
+          height: 30px;
+          border: 1px solid #fff;
+          text-align: center;
+          font: 600 12px/30px 'Playfair Display';
+          color: #fff;
+          transition: 1s; }
+        main section .item .inner:hover a {
+          background: #fff;
+          color: #111; }
+        main section .item .inner .img {
+          width: 100%;
+          height: 100%;
+          margin-left: 0px;
+          background-repeat: no-repeat;
+          background-size: cover; }
+        main section .item .inner .fas, main section .item .inner .fab {
+          color: #fff;
+          font-size: 42px; }
+      main section .item.black {
+        position: relative;
+        background: red;
+        overflow: hidden; }
+        main section .item.black h3, main section .item.black h4, main section .item.black i {
+          position: relative;
+          z-index: 1; }
+        main section .item.black::before {
+          content: '';
+          position: absolute;
+          top: var(--y);
+          left: var(--x);
+          transform: translate(-50%, -50%);
+          width: 0px;
+          height: 0px;
+          background: red;
+          border-radius: 50%;
+          transition: width 0.5s, height 0.5s;
+          z-index: 1; }
+        main section .item.black:hover::before {
+          width: 200vh;
+          height: 200vh; }
+      main section .item[data-box="11"] {
+        width: 33.333%;
+        height: 30vh;
+        background: #1c1c1c;
+        overflow-y: scroll; }
+      main section .item[data-box="12"] {
+        width: 33.333%;
+        height: 60vh; }
+      main section .item[data-box="21"] {
+        width: 66.666%;
+        height: 30vh; }
+      main section .item[data-box="22"] {
+        width: 66.666%;
+        height: 60vh; }
+      main section .item[data-box="13"] {
+        width: 33.333%;
+        height: 90vh;
+        text-align: center; }
+      main section .item[data-box="31"] {
+        width: 100%;
+        height: 30vh; }
+      main section .item[data-index="1"] {
+        background: #9b8c77;
+        padding: 0 30px; }
+      main section .item[data-index="8"] {
+        padding: 0 30px; }
+      main section .item[data-index="0"], main section .item[data-index="5"], main section .item[data-index="2"], main section .item[data-index="7"], main section .item[data-index="9"] {
+        background: #090909; }
+      main section .item[data-index="5"] {
+        background: #fff; }
+        main section .item[data-index="5"] p {
+          font-weight: 600;
+          color: #111; }
+      main section .item[data-index="3"] {
+        overflow-x: hidden;
+        background-color: #090909;
+        padding: 0; }
+        main section .item[data-index="3"] .img {
+          background-image: url(../img/image1.jpg); }
+      main section .item[data-index="4"] {
+        overflow-x: hidden;
+        background-color: #090909;
+        padding: 0; }
+        main section .item[data-index="4"] .content_img {
+          width: 100%;
+          height: 100%;
+          position: relative; }
+          main section .item[data-index="4"] .content_img .img {
+            background-image: url(../img/image3.jpg);
+            background-attachment: fixed; }
+          main section .item[data-index="4"] .content_img p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            width: 70%; }
+      main section .item[data-index="6"] {
+        overflow-x: hidden;
+        background-color: #090909;
+        padding: 0; }
+        main section .item[data-index="6"] .img {
+          background-image: url(../img/image2.jpg); }
+
+/*# sourceMappingURL=style.css.map */
