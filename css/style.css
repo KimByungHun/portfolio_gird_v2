@@ -38,7 +38,11 @@ body {
       font-size: 12px;
       padding-left: 10px; }
   body h2 {
-    font: 48px/1 'archivo black'; }
+    font: 700 52px/1 'poppins';
+    letter-spacing: 2px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    transition: 0.5s; }
   body .img {
     width: 100%;
     height: 100%;
@@ -73,6 +77,9 @@ main {
       main section .item[data-box="11"] {
         width: calc(100% / 3 );
         height: 45vh; }
+        main section .item[data-box="11"]:hover h2 {
+          -webkit-text-fill-color: unset;
+          font-size: 54px; }
       main section .item[data-box="11-2"] {
         width: calc(100% / 3 );
         height: 30vh; }
@@ -99,6 +106,9 @@ main {
       main section .item[data-box="22"] {
         width: 50%;
         height: 60vh; }
+        main section .item[data-box="22"]:hover h2 {
+          -webkit-text-fill-color: unset;
+          font-size: 54px; }
       main section .item[data-box="31"] {
         width: calc(200% / 3 );
         height: 30vh; }
@@ -127,5 +137,29 @@ main {
       main section .item[data-index="2"] .img {
         background-image: url(../img/image-profile.jpg);
         filter: grayscale(70%); }
+
+@media screen and (max-width: 767px) {
+  main section .item-init {
+    width: 50%;
+    height: 0px;
+    opacity: 0; }
+  main section .item {
+    width: 50%;
+    height: 40vh; }
+    main section .item[data-box="11"] {
+      width: 50%;
+      height: 40vh; }
+    main section .item[data-box="12"], main section .item[data-box="12-2"] {
+      width: 50%;
+      height: 40vh; }
+    main section .item[data-box="21"] {
+      width: 100%;
+      height: 40vh; }
+    main section .item[data-box="22"] {
+      width: 100%;
+      height: 80vh; }
+    main section .item[data-box="31"], main section .item[data-box="41"], main section .item[data-box="11-2"] {
+      width: 100%;
+      height: 20vh; } }
 
 /*# sourceMappingURL=style.css.map */
