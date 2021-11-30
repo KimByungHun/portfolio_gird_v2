@@ -48,3 +48,11 @@ btn.onmousemove = function(e){
 // var circleHeight = getComputedStyle(circle).height;
 // console.log(circleWidth);
 // console.log(circleHeight);
+
+//.black 백그라운드 이펙트
+
+const black = document.querySelector(".black");
+window.onmousemove = function(e){
+    const x_bg = e.clientX;
+    black.style.left = x_bg - 30 +"px";
+}
