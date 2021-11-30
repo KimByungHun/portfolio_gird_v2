@@ -109,6 +109,12 @@ main{
             overflow: hidden;
             .txt{
                position: absolute;
+               display: block;
+               width: 50%;
+               height: 100px;
+               text-align: center;
+               line-height: 100px;
+               margin: auto 0;
                z-index: 1;
                top: 50%; left: 50%; transform: translate(-50%, -50%);
                opacity: 0;
@@ -118,9 +124,10 @@ main{
             }
             &::before{
                content: '';
+               cursor: none;
                position: absolute;
                top: var(--y); left: var(--x); 
-               transform: translate(-50%, -50%);
+               transform: translate(-60%, -60%);
                width: 0px; height: 0px; 
                background: rgb(9,9,9);
                border-radius: 50%;
@@ -172,6 +179,31 @@ main{
             }
          }
          &[data-box="21"]{
+            overflow: hidden;
+            .inner{
+               align-items: center;
+               justify-content: center;
+               h1{
+                  transform: translateY(-50px);
+                  span{
+                     font-size: 54px;
+                     font-weight: 700;
+                     color: transparent;
+                     -webkit-text-stroke: 2px #000;
+                  }
+               }
+               &:hover{
+                  .black{
+                     position: absolute;
+                     top: 0;
+                     left: 0%;
+                     width: 200%;
+                     height: 100%;
+                     background: rgb(256,251,207);
+                     mix-blend-mode: difference;
+                  }
+               }
+            }
             width: 50%;
             height: 30vh;
             
@@ -281,10 +313,39 @@ main{
             }
          }
          &[data-index="2"]{
-            .img{
-               background-image: url(../img/image-profile.jpg);
-               filter: grayscale(70%);
+            .inner{
+               position: relative;
+               transform-style: preserve-3d;
+               perspective: 1000px;
+
+               .img{
+                  position: absolute;
+                  top: 0; left: 0;
+                  background-image: url(../img/image-profile.jpg);
+                  filter: grayscale(70%);
+                  backface-visibility: hidden;
+                  transition: 1s;
+   
+                  &:nth-child(1){
+                     transform: rotateY(0deg);
+                  }
+                  &:nth-child(2){
+                     transform: rotateY(180deg);
+                     // background: rgb(256,251,207);
+                     background: none;
+                  }
+
+               }
+               &:hover .img{
+                  &:nth-child(1){
+                     transform: rotateY(-180deg);
+                  }
+                  &:nth-child(2){
+                     transform: rotateY(0deg);
+                  }
+               }
             }
+            
             // >.inner{
             //    justify-content: center;
             //    align-items: center;

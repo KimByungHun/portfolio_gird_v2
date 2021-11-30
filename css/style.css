@@ -96,6 +96,12 @@ main {
         overflow: hidden; }
         main section .item.ripple .txt {
           position: absolute;
+          display: block;
+          width: 50%;
+          height: 100px;
+          text-align: center;
+          line-height: 100px;
+          margin: auto 0;
           z-index: 1;
           top: 50%;
           left: 50%;
@@ -105,10 +111,11 @@ main {
           color: #fff; }
         main section .item.ripple::before {
           content: '';
+          cursor: none;
           position: absolute;
           top: var(--y);
           left: var(--x);
-          transform: translate(-50%, -50%);
+          transform: translate(-60%, -60%);
           width: 0px;
           height: 0px;
           background: #090909;
@@ -142,8 +149,27 @@ main {
         main section .item[data-box="12-2"] .inner {
           border-top-width: thick; }
       main section .item[data-box="21"] {
+        overflow: hidden;
         width: 50%;
         height: 30vh; }
+        main section .item[data-box="21"] .inner {
+          align-items: center;
+          justify-content: center; }
+          main section .item[data-box="21"] .inner h1 {
+            transform: translateY(-50px); }
+            main section .item[data-box="21"] .inner h1 span {
+              font-size: 54px;
+              font-weight: 700;
+              color: transparent;
+              -webkit-text-stroke: 2px #000; }
+          main section .item[data-box="21"] .inner:hover .black {
+            position: absolute;
+            top: 0;
+            left: 0%;
+            width: 200%;
+            height: 100%;
+            background: #fffbcf;
+            mix-blend-mode: difference; }
       main section .item[data-box="21-2"] {
         width: 50%;
         height: 40vh; }
@@ -216,9 +242,27 @@ main {
           z-index: 1; }
       main section .item[data-index="1"] .img {
         background-image: url(../img/image2.jpg); }
-      main section .item[data-index="2"] .img {
-        background-image: url(../img/image-profile.jpg);
-        filter: grayscale(70%); }
+      main section .item[data-index="2"] .inner {
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 1000px; }
+        main section .item[data-index="2"] .inner .img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-image: url(../img/image-profile.jpg);
+          filter: grayscale(70%);
+          backface-visibility: hidden;
+          transition: 1s; }
+          main section .item[data-index="2"] .inner .img:nth-child(1) {
+            transform: rotateY(0deg); }
+          main section .item[data-index="2"] .inner .img:nth-child(2) {
+            transform: rotateY(180deg);
+            background: none; }
+        main section .item[data-index="2"] .inner:hover .img:nth-child(1) {
+          transform: rotateY(-180deg); }
+        main section .item[data-index="2"] .inner:hover .img:nth-child(2) {
+          transform: rotateY(0deg); }
 
 @media screen and (max-width: 767px) {
   main section .item-init {
