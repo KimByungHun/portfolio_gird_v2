@@ -55,17 +55,23 @@ body {
       font-size: 12px;
       padding-left: 10px; }
   body h2 {
+    position: absolute;
     font: 700 52px/1 'poppins';
     letter-spacing: 2px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 2px;
-    transition: 0.5s; }
+    transition: 0.5s;
+    z-index: 5; }
   body .img {
     width: 100%;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
+  body #map {
+    width: 100%;
+    height: 100%;
+    z-index: 2; }
 
 main {
   width: 100%;
@@ -263,6 +269,17 @@ main {
           transform: rotateY(-180deg); }
         main section .item[data-index="2"] .inner:hover .img:nth-child(2) {
           transform: rotateY(0deg); }
+      main section .item[data-index="11-3"] h2 {
+        position: absolute;
+        font: 700 54px/1 'poppins';
+        letter-spacing: 2px;
+        -webkit-text-fill-color: #111;
+        transition: 0.5s;
+        z-index: 5; }
+      main section .item[data-index="11-3"]:hover h2 {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 2px;
+        font-size: 52px; }
 
 @media screen and (max-width: 767px) {
   main section .item-init {
