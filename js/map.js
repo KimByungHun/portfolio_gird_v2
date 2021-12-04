@@ -24,3 +24,9 @@ var marker = new kakao.maps.Marker({
 });
 
 marker.setMap(map);
+
+
+//
+
+var zoomControl = new kakao.maps.ZoomControl();
+map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
