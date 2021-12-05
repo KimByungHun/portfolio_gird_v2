@@ -71,6 +71,59 @@ body{
       height: 100%;
       z-index: 2;
    }
+   aside{
+      width:100%; height:100vh; background:rgba(0, 0, 0, 0.9);
+      position:fixed; top:0; left:0; 
+      z-index:5; 
+      padding:5vw; 
+
+      .close{
+         position:absolute; top:20px; right:20px; color:#fff; cursor:pointer; 
+      }
+      form{
+         width: 100%; height: 100%;
+         overflow-y: auto;
+         fieldset{
+            border: none;
+            legend{
+               display: none;
+            }
+            >div{
+               padding-bottom: 10px;
+   
+               label{
+                  color: rgb(256,251,207); display: block;
+                  font-weight: 600;
+                  font-size: 24px;
+                  font-family: "poppins";
+               }
+               input[type=text], textarea{
+                  width: 100%; border: 1px solid #111;
+                  background: #fff;
+                  transition: 1s;
+                  resize: none;
+                  padding: 10px;
+               }
+               input[type=submit]{
+                  width: 100%;
+                  border: none;
+                  margin-bottom: 10px;
+                  padding: 15px;
+                  font-weight: 600;
+                  font-size: 18px;
+                  font-family: "poppins";
+                  background: #333;
+                  color: rgb(256,251,207);
+                  cursor: pointer;
+                  transition: 0.5s;
+                  &:hover{
+                     background: #666;
+                  }
+               }
+            }
+         }
+      }
+   }
 }
 main{
    width: 100%;
@@ -390,6 +443,14 @@ main{
             // @keyframes rotateText{
             //    0%{transform:rotate(360deg)}
             // }
+         }
+         &[data-index="11-2"]{
+            .inner{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               cursor: pointer;
+            }
          }
          &[data-index="11-3"]{
             h2{
