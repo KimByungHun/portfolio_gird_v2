@@ -10,7 +10,7 @@ frame.addEventListener("click", e=>{
 
     htmls+=`    
 
-                    <form action="#" method="get">
+                    <form action="#" method="get" id="myForm">
                         <fieldset>
                             <legend>Contact</legend>
 

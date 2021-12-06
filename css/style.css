@@ -124,6 +124,8 @@ body {
             transition: 0.5s; }
             body aside form fieldset > div input[type=submit]:hover {
               background: #666; }
+          body aside form fieldset > div p {
+            color: hotpink; }
 
 main {
   width: 100%;

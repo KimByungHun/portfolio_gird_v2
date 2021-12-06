@@ -1,8 +1,30 @@
-$("input[type=submit]").on("click", function(e){
-    if(!isTxt('message',1)) e.preventDefault();
-})
+// $("input[type=submit]").on("click", function(e){
+    
+// })
 
-function isTxt(name, len){
+// function isTxt(name, len){
+  
+// }
+
+function MyForm(){
+    this.init();
+    this.bindingEvent();
+}
+
+MyForm.prototype.init = function(){
+    this.form = document.querySelector("#myForm");
+    this.btnSubmit = 
+    this.form.querySelector("input[type=submit]");
+}
+
+MyForm.prototype.bindingEvent = function(){
+    this.btnSubmit.on("click", function(e){
+        if(!isTxt('message',1)) e.preventDefault();
+    })
+}
+
+
+MyForm.prototype.isTxt = function(name, len){
     if(len === undefined) len = 1;
 
     let txt = $("[name = "+name+"]").val();
