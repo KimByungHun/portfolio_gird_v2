@@ -305,7 +305,7 @@ main {
       main section .item[data-index="2"] .inner {
         position: relative;
         transform-style: preserve-3d;
-        perspective: 1000px; }
+        perspective: -1000px; }
         main section .item[data-index="2"] .inner .img {
           position: absolute;
           top: 0;
