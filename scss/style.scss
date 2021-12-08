@@ -52,7 +52,7 @@ body{
    }
    h2{
       position: absolute;
-      font: 700 52px/1 'poppins';
+      font: 700 42px/1 'poppins';
       letter-spacing: 2px;
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke: 2px;
@@ -213,7 +213,7 @@ main{
             height: 45vh;
             &:hover h2{
                -webkit-text-fill-color: unset;
-               font-size: 54px;
+               font-size: 44px;
             }
          }
          &[data-box="11-2"]{
@@ -317,7 +317,17 @@ main{
             height: 80px;
             position: relative;
             .inner{
-               flex-direction: row;              justify-content: space-between;
+               display: flex;
+               flex-direction: row;              
+               // justify-content: space-between;
+               align-items: center;
+               >h3{
+                  margin-top: 0;
+               }
+               .right{
+                  display: flex;
+                  align-items: center;
+               }
             }
 
             .container{
@@ -491,7 +501,7 @@ main{
          &[data-index="11-3"]{
             h2{
                position: absolute;
-               font: 700 54px/1 'poppins';
+               font: 700 42px/1 'poppins';
                letter-spacing: 2px;
                -webkit-text-fill-color: #111;
                transition: 0.5s;
@@ -500,7 +510,7 @@ main{
             &:hover h2{
                -webkit-text-fill-color: transparent;
                -webkit-text-stroke: 2px;
-               font-size: 52px;
+               font-size: 44px;
             }
          }
       }
@@ -510,7 +520,7 @@ main{
 @media screen and (max-width: 767px){
    main section{
       .item-init{
-         width: 50%;
+         width: 25%;
          height: 0px;
          opacity: 0;
       }
@@ -523,9 +533,13 @@ main{
             width: 50%;
             height: 40vh;
          }
-         &[data-box="12"],&[data-box="12-2"]{
-            width: 50%;
-            height: 40vh;
+         &[data-box="12"]{
+            width: 25%;
+            height: 30vh;
+         }
+         &[data-box="12-2"]{
+            width:75%;
+            height: 30vh;
          }
          &[data-box="21"]{
             width: 100%;
@@ -533,11 +547,11 @@ main{
          }
          &[data-box="22"]{
             width: 100%;
-            height: 80vh;
+            height: 60vh;
          }
          &[data-box="31"],&[data-box="41"],&[data-box="11-2"]{
             width: 100%;
-            height: 20vh;
+            height: 10vh;
          }
 //////////////////////////////\
          &[data-index="2"]{
