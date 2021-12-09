@@ -150,7 +150,7 @@ main {
         padding: 5px;
         display: flex;
         flex-direction: column;
-        border-top: 1px solid #111; }
+        border: 1px solid #111; }
       main section .item.ripple {
         position: relative;
         overflow: hidden; }
@@ -187,15 +187,30 @@ main {
         main section .item.ripple:hover::before {
           width: 500px;
           height: 500px; }
+      main section .item[data-box="t11"] {
+        width: clac(100%/6);
+        height: 15vh; }
+      main section .item[data-box="t41"] {
+        width: 66.66666%;
+        height: 15vh; }
+      main section .item[data-box="m11"] {
+        width: 33.33333%;
+        height: 5vh; }
+      main section .item[data-box="s11"] {
+        width: clac(100%/6);
+        height: 20vh; }
+      main section .item[data-box="s21"] {
+        width: 33.3333%;
+        height: 20vh; }
       main section .item[data-box="11"] {
-        width: 33%;
+        width: 33.3333%;
         height: 45vh; }
         main section .item[data-box="11"]:hover h2 {
           -webkit-text-fill-color: unset;
           font-size: 44px; }
       main section .item[data-box="11-2"] {
         width: calc(100% / 3 );
-        height: 30vh; }
+        height: 10vh; }
         main section .item[data-box="11-2"] p {
           font: 600 12px/1 'poppins'; }
           main section .item[data-box="11-2"] p span {
@@ -247,7 +262,7 @@ main {
           font-size: 54px; }
       main section .item[data-box="31"] {
         width: calc(200% / 3 );
-        height: 30vh; }
+        height: 10vh; }
         main section .item[data-box="31"] .inner {
           border-top-width: thick;
           flex-direction: row;
