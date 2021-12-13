@@ -165,6 +165,7 @@ main {
         padding: 5px;
         display: flex;
         flex-direction: column;
+        overflow-y: auto;
         border: 1px solid #111; }
         main section .item .inner .logo {
           margin: auto 0;
@@ -258,13 +259,15 @@ main {
           height: 500px; }
       main section .item[data-box="t11"] {
         width: clac(100%/6);
-        height: 15vh; }
+        height: 15vh;
+        min-height: 150px; }
         main section .item[data-box="t11"] .svg {
           width: 100%;
           height: 100%; }
       main section .item[data-box="t41"] {
         width: 66.66666%;
-        height: 15vh; }
+        height: 15vh;
+        min-height: 150px; }
         main section .item[data-box="t41"] h1 {
           padding: 0;
           text-align: center;
@@ -294,7 +297,8 @@ main {
           opacity: 1; }
       main section .item[data-box="s11"] {
         width: clac(100%/6);
-        height: 20vh; }
+        height: 20vh;
+        min-height: 200px; }
         main section .item[data-box="s11"] h2 {
           position: absolute;
           top: 50%;
@@ -307,7 +311,8 @@ main {
           -webkit-text-fill-color: #111; }
       main section .item[data-box="s21"] {
         width: 33.3333%;
-        height: 20vh; }
+        height: 20vh;
+        min-height: 200px; }
       main section .item[data-box="11"] {
         width: 33.3333%;
         height: 45vh; }
@@ -317,16 +322,22 @@ main {
       main section .item[data-box="11-2"] {
         width: calc(100% / 3 );
         height: 10vh; }
+        main section .item[data-box="11-2"] .inner {
+          border-left: none;
+          border-right: none;
+          border-bottom: none; }
         main section .item[data-box="11-2"] p {
           font: 600 12px/1 'poppins'; }
           main section .item[data-box="11-2"] p span {
             font: 500 10px/1 'poppins'; }
       main section .item[data-box="12"] {
         width: calc(100% / 6 );
-        height: 70vh; }
+        height: 70vh;
+        min-height: 450px; }
       main section .item[data-box="12-2"] {
         width: calc(100% / 3 );
-        height: 70vh; }
+        height: 70vh;
+        min-height: 450px; }
         main section .item[data-box="12-2"] .inner {
           border-top-width: thick; }
       main section .item[data-box="21"] {
@@ -352,8 +363,9 @@ main {
             background: #fffbcf;
             mix-blend-mode: difference; }
       main section .item[data-box="21-2"] {
-        width: 100%;
-        height: 40vh; }
+        width: 50%;
+        height: 40vh;
+        min-height: 300px; }
         main section .item[data-box="21-2"] .inner {
           border-top-width: thick; }
       main section .item[data-box="22"] {
@@ -372,7 +384,10 @@ main {
         main section .item[data-box="31"] .inner {
           border-top-width: thick;
           flex-direction: row;
-          justify-content: space-between; }
+          justify-content: space-between;
+          border-left: none;
+          border-right: none;
+          border-bottom: none; }
           main section .item[data-box="31"] .inner li {
             padding-left: 0;
             list-style: none; }
@@ -383,6 +398,8 @@ main {
         height: 80px;
         position: relative; }
         main section .item[data-box="41"] .inner {
+          border-left: none;
+          border-right: none;
           display: flex;
           flex-direction: row;
           align-items: center; }
@@ -504,6 +521,8 @@ main {
     main section .item[data-box="t41"] {
       width: 75%;
       height: 15vh; }
+      main section .item[data-box="t41"] h1 {
+        font-size: 40px; }
     main section .item[data-box="m11"] {
       display: none; }
     main section .item[data-box="s11"] {
@@ -529,12 +548,16 @@ main {
     main section .item[data-box="21"] {
       width: 100%;
       height: 40vh; }
+    main section .item[data-box="21-2"] {
+      width: 100%;
+      height: 20vh; }
     main section .item[data-box="22"] {
       width: 100%;
       height: 60vh; }
     main section .item[data-box="31"], main section .item[data-box="41"], main section .item[data-box="11-2"] {
       width: 100%;
-      height: 10vh; }
+      height: 10vh;
+      min-height: 100px; }
     main section .item[data-index="2"] .inner > .img > h1 {
       font-size: 32px; }
     main section .item[data-index="11-2"] .inner > h2 {
