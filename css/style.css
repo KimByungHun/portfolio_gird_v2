@@ -218,8 +218,8 @@ main {
             transition: 1s;
             margin: 0 auto; }
           main section .item .inner .content_text:hover a {
-            background: #fff;
-            color: #111; }
+            background: #111;
+            color: #fff; }
       main section .item.ripple {
         position: relative;
         overflow: hidden; }
@@ -509,6 +509,8 @@ main {
     main section .item[data-box="s11"] {
       width: 50%;
       height: 20vh; }
+      main section .item[data-box="s11"] h2 {
+        writing-mode: horizontal-tb; }
     main section .item[data-box="s21"] {
       width: 50%;
       height: 20vh; }

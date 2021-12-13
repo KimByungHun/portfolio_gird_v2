@@ -248,8 +248,8 @@ main{
                }
                &:hover{
                   a{
-                     background: #fff;
-                     color: #111;
+                     background: #111;
+                     color: #fff;
                   }
                }
             }
@@ -704,6 +704,15 @@ main{
          &[data-box="s11"]{
             width: 50%;
             height : 20vh;
+
+   
+               h2{
+
+                  writing-mode: horizontal-tb;
+
+               }
+
+            
          }
          &[data-box="s21"]{
             width: 50%;
