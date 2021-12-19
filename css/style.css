@@ -165,7 +165,6 @@ main {
         padding: 5px;
         display: flex;
         flex-direction: column;
-        overflow-y: auto;
         border: 1px solid #111; }
         main section .item .inner .logo {
           margin: auto 0;
